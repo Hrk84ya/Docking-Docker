@@ -15,7 +15,6 @@ The repository includes the following Docker-based projects:
 * Project 3: A multi-container application
 * Project-4: A multi-stage build for a Node.js application
 <br>
-<br>
 Each project is organized in its own folder with all necessary files and instructions.
 
 ## Getting Started
