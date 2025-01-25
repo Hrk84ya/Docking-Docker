@@ -10,9 +10,10 @@ This repository contains a collection of Docker projects for various use cases. 
 ## Projects Overview
 The repository includes the following Docker-based projects:
 
-* Project 1: A simple web application container
-* Project 2: A database container with custom configurations
-* Project 3: A microservice architecture example
+* Project 1: A simple web server
+* Project 2: Dockerizing a Python Script
+* Project 3: A multi-container application
+* Project-4: A multi-stage build for a Node.js application
 <br>
 <br>
 Each project is organized in its own folder with all necessary files and instructions.
