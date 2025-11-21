@@ -1,20 +1,36 @@
-# Containerizing a TensorFlow Model with Docker
+# TensorFlow Machine Learning Container
 
-This project demonstrates how to containerize a TensorFlow machine learning model using Docker. The goal is to create a portable environment where you can run TensorFlow models across various systems without worrying about the underlying setup.
+Docker container for TensorFlow machine learning applications with pre-trained MobileNetV2 model.
 
+## Features
+- Official TensorFlow Docker image
+- Pre-trained MobileNetV2 model
+- ImageNet weights
+- GPU support available
 
-## Technologies Used
+## Build & Run
 
-- Docker
-- TensorFlow
-- Python
+```bash
+# Build the image
+docker build -t tensorflow-model .
 
-## Project Overview
+# Run the container
+docker run tensorflow-model
 
-In this project, you'll containerize a simple TensorFlow model using Docker. By using Docker, we ensure that the environment is consistent and portable, allowing you to run your machine learning model on different systems with ease, without worrying about dependencies or system configuration.
+# For GPU support (requires nvidia-docker)
+docker run --gpus all tensorflow-model
+```
 
-### Model Overview
+## Files
+- `Dockerfile`: TensorFlow environment setup
+- `model.py`: MobileNetV2 model loading and summary
+- `readme.md`: Additional documentation
 
-This example uses the pre-trained **MobileNetV2** model from TensorFlow's `keras.applications`. The model is pre-trained on ImageNet data, and the script will load it and confirm that the model is successfully loaded.
+## Model Details
+- Architecture: MobileNetV2
+- Weights: ImageNet pre-trained
+- Use case: Image classification and feature extraction
 
-*This method ensures that the dependencies and configuration remain consistent, making it easier to deploy machine learning models in a variety of environments.*
+## Requirements
+- Docker with sufficient memory (2GB+ recommended)
+- For GPU: NVIDIA Docker runtime
