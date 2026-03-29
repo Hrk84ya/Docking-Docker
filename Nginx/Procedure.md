@@ -20,4 +20,4 @@ docker run -p 8080:80 my-nginx-app
 * **my-nginx-app** is the name of the image
 
 6. Access the Webpage
-* Open your browser and navigate to *http://localhost/8080* to view the page
+* Open your browser and navigate to *http://localhost:8080* to view the page
