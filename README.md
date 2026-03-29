@@ -10,11 +10,16 @@ This repository contains a collection of Docker projects for various use cases. 
 ## Projects Overview
 The repository includes the following Docker-based projects:
 
-* Project 1: A simple web server
-* Project 2: Dockerizing a Python Script
-* Project 3: A multi-container application
-* Project-4: A multi-stage build for a Node.js application
-<br>
+* **Nginx**: A simple static web server serving a login page
+* **Python-Script**: Dockerizing a Python data processing script
+* **Flask**: A Flask + MySQL multi-container application
+* **Node**: A multi-stage build for a Node.js application
+* **Optimize Docker**: Multi-stage build optimization techniques for Python
+* **Healthcheck**: Docker HEALTHCHECK instruction demo with a Go app
+* **TensorFlow**: TensorFlow container with pre-trained MobileNetV2 model
+* **Data Science**: Jupyter Notebook environment for data science
+* **Full-Stack**: Flask API with PostgreSQL and Redis via Docker Compose
+
 Each project is organized in its own folder with all necessary files and instructions.
 
 ## Getting Started
@@ -54,5 +59,3 @@ Contributions to this repository are welcomed! If you'd like to contribute, plea
 4. Commit your changes (*git commit -am 'Add new feature'*)
 5. Push to the branch (*git push origin feature-name*)
 6. Open a pull request
-
-
