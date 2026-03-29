@@ -1,14 +1,14 @@
-from app import Flask
+from flask import Flask
 import mysql.connector
 
 app = Flask(__name__)
 
 def get_db_connection():
     connection = mysql.connector.connect(
-    host="db",
-	user="root",
-	password="example",
-	database="test_db"
+        host="db",
+        user="root",
+        password="example",
+        database="test_db"
     )
     return connection
 
